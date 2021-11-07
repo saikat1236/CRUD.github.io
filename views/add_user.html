@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="" href="../assets/css/style.css">
+    <title>CRUD app</title>
+</head>
+<body>
+    <header id="header">
+        <nav>
+         <div class="container">
+             <div class=" text-center">
+                 <a href="/" class="nav-brand text-dark">user management system</a>
+                 
+             </div>
+        
+         </div>
+        </nav>
+    </header>
+
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <div class="filter">
+                    <a href="/"><i class="fas fa-user"></i> all user</a>  
+                </div>
+            </div>
+            <div class="form-title text-center">
+                <h2 class="text-dark">new user</h2>
+                <span class="text-light">use the below form to make account</span>
+            </div>
+
+            <form method="POST" id="update_user">
+
+                <div id="new_user">
+
+                    <div class="form-group">
+                        <label for="name" id="text-light">name</label>
+                        <input type="hidden" name="id" value="">
+                        <input type="text" name="name" value="" placeholder="saikat">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" id="text-light">email</label>
+                        <input type="text" name="email" value="" placeholder="saikat@gmail.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender" id="text-light">gender</label>
+                        <div class="radio inline">
+                            <input type="radio" name="gender" value="male">
+                            <label for="gender" id="text-light">male</label>
+                        </div>
+                        <div class="radio inline">
+                            <input type="radio" name="gender" value="female">
+                            <label for="gender" id="text-light">female</label>
+                        </div>
+                       
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender" id="text-light">status</label>
+                        <div class="radio inline">
+                            <input type="radio" name="status" value="active">
+                            <label for="gender" id="radio-label">active</label>
+                        </div>
+                        <div class="radio inline">
+                            <input type="radio" name="status" value="inactive">
+                            <label for="gender" id="radio-label">inactive</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn text-dark update">save</button>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </main>
+</body>
+</html>
